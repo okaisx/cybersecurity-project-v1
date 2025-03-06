@@ -1,13 +1,13 @@
 <!-- Network design and implementation within VMware Workstation 17 pro -->
 
-For this network, I've used the Virtual Network Editor feature in VMware Workstation to create three networks, while also making use of the default NAT network (VMnet8). The pfSense firewall/router VM will have network interfaces for each network:
+For this network, I've used the Virtual Network Editor feature in VMware Workstation to create three networks, while also making use of the default NAT network (VMnet8). In the network editor, I've given the networks I've created custom names to help myself keep track of the IP addressing. The pfSense firewall/router VM will have network interfaces for each network:
 
 - **NAT (VMnet8)**
 	- 192.168.254.0/24
 	- To give internet access to the pfSense VM which will provide internet access to the other networks as necessary
 	- DHCP will be enabled on this network to dynamically assign an IP to the pfSense VM 
 
-- **VMnet1**
+- **Cybersecurity 10 (VMnet2)**
 	- 10.10.10.0/24
 	- Host-only network which will only have internet access through the pfSense VM
 	- pfSense VM will be assigned a static IP address of 10.10.10.254
@@ -16,7 +16,7 @@ For this network, I've used the Virtual Network Editor feature in VMware Worksta
 	- Ubuntu Server running Docker hosting containers of vulnerable machines (i.e. Metasploitable, Damn Vulnerable WebApp, Buggy Web Application, WebGoat) will be deployed here and have a static IP of 10.10.10.52
 	- Other VMs may be deployed on this network at a later stage
 
-- **VMnet2**
+- **Cybersecurity 20 (VMnet3)**
 	- 10.10.20.0/24
 	- Host-only network which will only have internet access through the pfSense VM
 	- pfSense VM will be assigned a static IP address of 10.10.20.254
@@ -25,7 +25,7 @@ For this network, I've used the Virtual Network Editor feature in VMware Worksta
 	- Fedora 41 Workstation VM will be deployed here
    	
 
-- **VMnet3**
+- **Cybersecurity 30 (VMnet4)**
 	- 10.10.30.0/24
 	- Host-only network which will only have internet access through the pfSense VM
 	- pfSense VM will be assigned a static IP address of 10.10.30.254
