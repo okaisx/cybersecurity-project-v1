@@ -2,6 +2,8 @@
 
 For this network, I've used the Virtual Network Editor feature in VMware Workstation to create three networks, while also making use of the default NAT network (VMnet8). In the network editor, I've given the networks I've created custom names to help myself keep track of the IP addressing. The pfSense firewall/router VM will have network interfaces for each network:
 
+![image](https://github.com/user-attachments/assets/5499f164-e46d-4742-ba01-4543fe040331)
+
 - **NAT (VMnet8)**
 	- 192.168.254.0/24
 	- To give internet access to the pfSense VM which will provide internet access to the other networks as necessary
