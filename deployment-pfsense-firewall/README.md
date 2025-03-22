@@ -31,7 +31,6 @@ Take note of the MAC addresses for each network interface under **Virtual Machin
 
 ![image](https://github.com/user-attachments/assets/2590358b-9bca-441c-bf09-0173c30ebc00)
 
-
 During the installation, we will focus only on the NIC connected to the NAT network as the WAN interface, deferring the setup of the LAN interfaces until we reach the pfSense main menu.
 
 Proceed through the installation by designating the WAN as the network interface connected to the NAT network.
