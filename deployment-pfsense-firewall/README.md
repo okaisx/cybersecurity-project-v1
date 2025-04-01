@@ -102,6 +102,8 @@ Proceed to the website and log in using the default pfSense credentials:
 - **Username**: admin
 - **Password**: pfsense
 
+*Note: It is recommended to update from the default password. This can be done under **System > User Manager > Users** by clicking the pencil icon next to the admin user*
+
 ![image](https://github.com/user-attachments/assets/015aa424-b79d-42ea-b348-c7e3ca0b92cf)
 
 After logging in, you may be presented with the setup wizard (similar to the steps we've taken in the console) which you can choose to go through or skip. Our objective at this moment is to navigate to the firewall rules page by selecting **Firewall** > **Rules** to edit its rule configuration.
