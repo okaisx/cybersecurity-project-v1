@@ -1,0 +1,1 @@
+Deployment of Fedora Server virtual machine within VMware Workstation to be used for hosting Splunk
